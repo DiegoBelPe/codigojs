@@ -4,12 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>curso JavaScript</title>
 </head>
 <body>
   <script>
 // Destructuracion
+const numeros =[1, 2, 3]
+// sin utilizar la destructuracion
+let uno = numeros[0],
+     dos = numeros[1],
+     tres = numeros[2];
 
+     console.log(uno, dos, tres)
+
+    //  con destructuracion
+    const[one, two, three]= numeros;
+
+    console.log(one, two, three);
+
+    const persona = {
+      nombre: "Diego",
+      Apellido: "Beltran",
+      Edad: 35
+    }
+
+    let{nombre, Apellido, Edad} = persona;
+    console.log(nombre, Apellido, Edad);
 
   </script>
   
